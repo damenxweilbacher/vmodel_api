@@ -10,7 +10,7 @@ class CarsController < ApplicationController
   end
 
   def create # use post
-    car = Car.create(model:
+    car = Car.create!(model:
     params[:model], prod_year:params[:prod_year]) #dynamic     
     render json: car
   end

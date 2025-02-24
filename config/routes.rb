@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/manufacturers/:id' => 'manufacturers#show' # find (dynamic)
   delete '/cars/:id' => 'cars#destroy' 
   delete '/manufacturers/:id' => 'manufacturers#destroy' # delete (destroy)
-  post '/cars/:id' => 'cars#create'
-  post '/manufacturers/:id' => 'manufacturers#create'# create
+  post '/cars' => 'cars#create'
+  post '/manufacturers' => 'manufacturers#create'# create
 end
