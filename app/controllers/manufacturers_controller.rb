@@ -6,6 +6,9 @@ class ManufacturersController < ApplicationController
 
   def show # use get
     manufacturer = Manufacturer.find(params[:id]) #dynamic
+    puts "<><><><><>"
+    puts params[:id]
+    puts "<><><><><>"
     render json: manufacturer
   end
 
